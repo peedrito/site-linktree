@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200&display=swap');
+
+body {
+    background-color: rgb(21, 21, 21);
+    height: 100%;
+    margin: 0; /* Remova a margem padrão do corpo para garantir que a altura seja 100% */
+}
+
+.container {
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.degrade {
+    background: linear-gradient(to right, #4badfc, #014cbd);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}   
+
+header img {
+    max-width: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-shadow: 0 0 0 5px rgba(75, 173, 252, 0.8), 0 0 0 12px rgba(1, 76, 189, 0.5);
+}
+
+header h1 {
+    font-family: 'Source Sans 3', sans-serif;
+    margin-top: 0;
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+header p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    padding: 0;
+}
+
+section.buttons-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%; /* Certifique-se de que o contêiner ocupe 100% da altura */
+    /* Centralize os itens na direção transversal (vertical) */
+}
+
+a.link button {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: .2s;
+}
+
+a.link svg {
+    width: 2em;
+    height: 2em; /* Se necessário ajustar a altura */
+}
+
+a.link button:hover, footer a.button-footer:hover{
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+
+}
+
+footer a.button-footer {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+footer svg {
+    width: 0.8em;
+    height: 0.8em; /* Se necessário ajustar a altura */
+}
